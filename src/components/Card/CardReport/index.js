@@ -49,9 +49,11 @@ export default class CardReport extends Component {
 
         if(response.data !== false) {
             const re = await api.get('/reports')
+            this.setState({ msg: '' })
             this.setState({
                 reports: re.data
             })
+
         }
     }
 
@@ -64,7 +66,7 @@ export default class CardReport extends Component {
                     <List>
                     { this.state.reports && 
                     this.state.reports.map( reports => (
-                            <ListItem Key={reports.id}>
+                            <ListItem key={reports.id}>
                                 <ListItemAvatar>
                                     <Avatar src={reports.image} alt="" />
                                 </ListItemAvatar>

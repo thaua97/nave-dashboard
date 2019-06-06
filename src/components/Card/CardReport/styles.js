@@ -4,10 +4,15 @@ const Card = styled.div`
     width: 312px;
     height: 438px;
     margin: 0px 0px 0px 20px;
-    padding: 20px 23px 0px 19px;
+    padding: 20px 23px 5px 19px;
     border-radius: 15px;
     box-shadow: 0 0 6px 1px rgba(188, 188, 188, 0.5);
     background-color: #fff;
+
+    @media screen and (max-width: 411px) {
+      width: 100%;
+      margin: 20px 0px 30px 0px;
+    }
 `
 const CardTitle = styled.h1`
     width: 270px;
@@ -20,16 +25,14 @@ const CardTitle = styled.h1`
 const CardContent = styled.div`
    width: 280px;
    height: 345px;
-   position: fixed;
    overflow: auto;
 `
 const CardAction = styled.div`
-    margin-top: 345px;
-    position: fixed;
-    width: 290px;
+    cursor: pointer;
+    width: 100%;
     height: 40.1px;
-    padding: 20px;
-    border-radius: 15px;
+    padding: 10px;
+    border-radius: 0 0 15px 15px;
     box-shadow: 0 -2px 6px 0 rgba(188, 188, 188, 0.5);
     background-color: #ffffff;
 `
@@ -95,12 +98,32 @@ const Send = styled.form`
 `
 const Input = styled.input`
   border: none;
+  height: 20px;
+  width: 201px;
+  padding: 5px;
+  transition: all .1s;
+
   ::placeholder {
     width: 201px;
     height: 14px;
+    padding: 5px;
     font-size: 12px;
     color: rgba(108, 108, 108, 0.5);
 
+  }
+
+  :hover {
+    color: #4c84ff;
+    border-bottom: solid 1px #4c84ff;
+
+    ::placeholder {
+      color: #4c84ff;
+    }
+  }
+
+  @media screen and(max-width: 411px) {
+    width: 100%;
+    height: 30px;
   }
 
 `

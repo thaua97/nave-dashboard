@@ -53,7 +53,6 @@
     {
       "id": 3,
       "user": "NAVER",
-      
       "image": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png",
       "time": "49 mins ago"
     },
@@ -98,6 +97,20 @@
       "message": "ta certo",
       "time": "2 min ago",
       "id": 9
+    },
+    {
+      "user": "NAVER",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png",
+      "message": "Testando mais uma vez pq sempre é bom tester né",
+      "time": "2 min ago",
+      "id": 10
+    },
+    {
+      "user": "NAVER",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png",
+      "message": "Teste né",
+      "time": "2 min ago",
+      "id": 11
     }
   ]
 }

@@ -84,9 +84,11 @@ export default class CardReport extends Component {
                 <CardAction>
                     <Send onSubmit={this.handleSubmit}>
                         <Input
+                            placeholder="Type your coment here..."
                             value={this.state.msg}
                             onChange={this.handleMsgChange}
-                            placeholder="Type your coment here..."
+                            required
+                            
                         />
                         <Button type="submit">SEND</Button>
                     </Send>

@@ -19,6 +19,12 @@ const Card = styled.div`
         height: 100%;
         margin: 0;
     }
+
+    @media screen and (min-width: 411px) and (max-width: 768px){
+        width: 100%;
+        height: 270px;
+        margin: 0;
+    }
 `
 const CardTitle = styled.h1`
     width: 270px;
@@ -28,9 +34,18 @@ const CardTitle = styled.h1`
     font-weight: 700;
     color: #6c6c6c;
 `
+const CardContent = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    
+`
 
 const Chart = styled(BarChart)`
-  @media screen and (max-width: 411px) {
+  margin-left: -5%;
+  
+  @media screen and (min-width: 411px) and (max-width: 768px) {
       visibility: hidden;
       display: none;
   }
@@ -40,9 +55,21 @@ const ChartMb = styled(BarChart)`
   visibility: hidden;
 
   @media screen and (max-width: 411px) {
+    margin-left: -5%;
     visibility: visible;
     display: block;
   }
 `
 
-export { Card, CardTitle, Chart, ChartMb }
+const ChartTb = styled(BarChart)`
+  display: none;
+  visibility: hidden;
+
+  @media screen and (min-width: 768px) and (max-width: 768px) {
+    margin-left: -10%;
+    visibility: visible;
+    display: block;
+  }
+`
+
+export { Card, CardTitle, CardContent, Chart, ChartMb, ChartTb }

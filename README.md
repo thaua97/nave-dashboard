@@ -1,5 +1,17 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Dependences
+
+In this project I am using the following dependencies
+
+* Styled Components
+* Material UI
+* React Icons
+* ReCharts
+* Axios
+
+
+
 ## Available Scripts
 
 In the project directory, you can run:

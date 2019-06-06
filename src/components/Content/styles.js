@@ -2,7 +2,6 @@ import styled from 'styled-components'
 
 const Container = styled.div`
   padding: 3% 2%;
-
   @media screen and (max-width: 411px){ padding: 20px;}
 `
 const Layout = styled.div`
@@ -34,6 +33,13 @@ const Header = styled.div`
         align-items: center;
     }
 
+    @media screen and (max-width: 768px) {
+        display: flex;
+        flex-direction: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+
 `
 const TitleHeader = styled.h1`
     width: 289px;
@@ -53,9 +59,7 @@ const TitleHeader = styled.h1`
 `
 const ContentHeader = styled.div`
     display: flex;
-    flex-direction: wrap;
-    justify-content: flex-end;
-    align-items: center;
+    flex-direction: row;
 
     @media screen and (max-width: 411px){
         display: flex;
@@ -63,7 +67,6 @@ const ContentHeader = styled.div`
         justify-content: flex-start;
         align-items: center;
     }
-
 `
 const Section = styled.section`
     display: flex;
@@ -76,6 +79,11 @@ const Section = styled.section`
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+
+    @media screen and (max-width: 768px){
+        display: flex;
+        flex-direction: wrap;
     }
 `
 

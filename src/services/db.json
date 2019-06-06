@@ -111,6 +111,13 @@
       "message": "Teste né",
       "time": "2 min ago",
       "id": 11
+    },
+    {
+      "user": "NAVER",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png",
+      "message": "2223",
+      "time": "2 min ago",
+      "id": 12
     }
   ]
 }

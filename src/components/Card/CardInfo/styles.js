@@ -3,7 +3,6 @@ import styled from 'styled-components'
 const Card = styled.div`
     width: 229px;
     height: 100px;
-    margin: ${props => props.right === true ? '0 0 0 20px' : '0 0 0 0 '};
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -16,6 +15,12 @@ const Card = styled.div`
         width: 335px;
         height: 100px;
         margin: 10px 0px;
+    }
+
+    @media screen and (max-width: 768px) {
+        width: 348px;
+        height: 100px;
+        margin: 0 0;
     }
 
 `

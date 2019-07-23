@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-const Card = styled.div`
+export const Card = styled.div`
     width: 312px;
     height: 438px;
     margin: 0px 0px 0px 20px;
@@ -19,7 +19,7 @@ const Card = styled.div`
         margin: 0;
     }
 `
-const CardTitle = styled.h1`
+export const CardTitle = styled.h1`
     width: 270px;
     height: 23.1px;
     margin-bottom: 5px;
@@ -52,7 +52,7 @@ const CardTitle = styled.h1`
         }
     }
 `
-const CardContent = styled.div`
+export const CardContent = styled.div`
    width: 100%;
    height: 345px;
    margin-top: 5%;
@@ -88,7 +88,7 @@ const CardContent = styled.div`
     }
 
 `
-const CardAction = styled.div`
+export const CardAction = styled.div`
     cursor: pointer;
     width: 100%;
     height: 40.1px;
@@ -97,30 +97,30 @@ const CardAction = styled.div`
     box-shadow: 0 -2px 6px 0 rgba(188, 188, 188, 0.5);
     background-color: #ffffff;
 `
-const List = styled.ul`
+export const List = styled.ul`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 `
-const ListItem = styled.li`
+export const ListItem = styled.li`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
 `
-const ListItemAvatar = styled.div`
+export const ListItemAvatar = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 `
-const Avatar = styled.img`
+export const Avatar = styled.img`
   height: 45px;
   width: 45px;
   border-radius: 50%;
 `
-const ListItemContent = styled.div`
+export const ListItemContent = styled.div`
   padding-left: 1em;
   display: flex;
   flex-direction: column;
@@ -128,7 +128,7 @@ const ListItemContent = styled.div`
   align-items: flex-start;
   
 `
-const ListItemName = styled.h2`
+export const ListItemName = styled.h2`
   width: 135px;
   height: 19px;
   margin-bottom: 5px;
@@ -136,28 +136,40 @@ const ListItemName = styled.h2`
   font-weight: 500;
   color: #6c6c6c;
 `
-const ListItemText = styled.p`
+export const ListItemText = styled.p`
   width: 197px;
   margin-bottom: 5px;
   height: 58.1px;
   font-size: 12px;
   color: #6c6c6c;
 `
-const ListItemTime = styled.span`
+export const ListItemTime = styled.span`
   width: 194px;
   height: 19px;
   margin-bottom: 5px;
   font-size: 12px;
   color: rgba(108, 108, 108, 0.5);
 `
-const Send = styled.form`
+export const ContentNull = styled.div`
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #c3c3c3;
+  font-size: 18px;
+`
+export const Send = styled.form`
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
+  justify-content: space-around;
+  align-items: center;
   
 `
-const Input = styled.input`
+export const Input = styled.input`
   border: none;
   height: 20px;
   width: 201px;
@@ -173,7 +185,7 @@ const Input = styled.input`
 
   }
 
-  :hover {
+  :focus {
     color: #4c84ff;
     border-bottom: solid 1px #4c84ff;
 
@@ -188,29 +200,17 @@ const Input = styled.input`
   }
 
 `
-const Button = styled.button`
+export const Button = styled.button`
   border: none;
   background: transparent;
-  width: 31px;
-  height: 14px;
+  width: 62px;
+  height: 31px;
   font-size: 12px;
   color: #4c84ff;
-`
+  cursor: pointer;
+  transition: 0.2s all;
 
-export { 
-    Card, 
-    CardTitle, 
-    CardContent,
-    CardAction,
-    List, 
-    ListItem, 
-    ListItemAvatar, 
-    Avatar, 
-    ListItemContent, 
-    ListItemName, 
-    ListItemText, 
-    ListItemTime,
-    Send,
-    Input,
-    Button 
-}
+  :hover {
+    background: #4c84ff33;
+  }
+`

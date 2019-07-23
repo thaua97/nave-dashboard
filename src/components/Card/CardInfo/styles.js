@@ -8,7 +8,7 @@ const Card = styled.div`
     justify-content: space-around;
     align-items: center;   
     border-radius: 15px;
-    box-shadow: 0 0 6px 1px rgba(188, 188, 188, 0.5);
+    box-shadow: 0 4px 8px 0px ${props => props.color+'8C'};
     background-color: ${( props => props.color || '#fff')};
 
     @media screen and (max-width: 411px){

@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import { BarChart } from 'recharts'
 
-const Card = styled.div`
+export const Card = styled.div`
     width: 645px;
     height: 438px;
     padding: 17px 19px;
@@ -26,7 +26,7 @@ const Card = styled.div`
         margin: 0;
     }
 `
-const CardTitle = styled.h1`
+export const CardTitle = styled.h1`
     width: 270px;
     height: 23px;
     margin-bottom: 10px;
@@ -34,7 +34,7 @@ const CardTitle = styled.h1`
     font-weight: 700;
     color: #6c6c6c;
 `
-const CardContent = styled.div`
+export const CardContent = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -42,7 +42,7 @@ const CardContent = styled.div`
     
 `
 
-const Chart = styled(BarChart)`
+export const Chart = styled(BarChart)`
   margin-left: -5%;
   
   @media screen and (min-width: 411px) and (max-width: 768px) {
@@ -50,7 +50,7 @@ const Chart = styled(BarChart)`
       display: none;
   }
 `
-const ChartMb = styled(BarChart)`
+export const ChartMb = styled(BarChart)`
   display: none;
   visibility: hidden;
 
@@ -61,7 +61,7 @@ const ChartMb = styled(BarChart)`
   }
 `
 
-const ChartTb = styled(BarChart)`
+export const ChartTb = styled(BarChart)`
   display: none;
   visibility: hidden;
 
@@ -71,5 +71,13 @@ const ChartTb = styled(BarChart)`
     display: block;
   }
 `
-
-export { Card, CardTitle, CardContent, Chart, ChartMb, ChartTb }
+export const ContentNull = styled.div`
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #c3c3c3;
+  font-size: 18px;
+`

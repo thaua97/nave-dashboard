@@ -51,12 +51,6 @@
       "time": "51 mins ago"
     },
     {
-      "id": 3,
-      "user": "NAVER",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png",
-      "time": "49 mins ago"
-    },
-    {
       "id": 4,
       "user": "NAVER",
       "image": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png",
@@ -69,55 +63,6 @@
       "image": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png",
       "message": "Eiusmod mollit qui consectetur anim cupidatat sit fugiat.",
       "time": "27 mins ago"
-    },
-    {
-      "user": "NAVER",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png",
-      "message": "teste",
-      "time": "2 min ago",
-      "id": 6
-    },
-    {
-      "user": "NAVER",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png",
-      "message": "Mais Um",
-      "time": "2 min ago",
-      "id": 7
-    },
-    {
-      "user": "NAVER",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png",
-      "message": "Agora vai",
-      "time": "2 min ago",
-      "id": 8
-    },
-    {
-      "user": "NAVER",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png",
-      "message": "ta certo",
-      "time": "2 min ago",
-      "id": 9
-    },
-    {
-      "user": "NAVER",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png",
-      "message": "Testando mais uma vez pq sempre é bom tester né",
-      "time": "2 min ago",
-      "id": 10
-    },
-    {
-      "user": "NAVER",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png",
-      "message": "Teste né",
-      "time": "2 min ago",
-      "id": 11
-    },
-    {
-      "user": "NAVER",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png",
-      "message": "2223",
-      "time": "2 min ago",
-      "id": 12
     }
   ]
 }

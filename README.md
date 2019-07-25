@@ -9,6 +9,10 @@ In this project I am using the following dependencies
 * React Icons
 * ReCharts
 * Axios
+* Redux
+* Redux Saga
+* Reactotron React.JS
+* Reactotron Redux Saga
 
 
 

@@ -1,35 +1,18 @@
-import React, { useEffect, useState } from 'react';
-
-import api from '../../../services/api';
+import React from 'react'
+import { connect } from 'react-redux'
 
 import { Card, CardTitle, CardContent, Chart, ChartMb, ChartTb, ContentNull } from './styles';
 import { Bar, XAxis, YAxis, Tooltip, CartesianGrid } from 'recharts';
 //import Snackbar from '../../Snackbar'
 
-export default function CardTable (props) {
-    const [ sales, setSales ] = useState(null);
-
-    useEffect(() => {
-        async function getSales () {
-            try {
-                const res = await api.get('/sales');
-                if(res.data) {
-                    setSales(res.data);
-                }
-            } catch (error) {
-                
-            }
-        }
-        getSales();
-    }, [])
-
+function CardTable ({ traffic }, props) {
     return (
         <Card>
             <CardTitle>{props.title}</CardTitle>
-            { sales !== null && sales.length !== 0 ?
+            { traffic !== null ?
             <CardContent>
                 
-                <Chart width={590} height={373} data={sales}>
+                <Chart width={590} height={373} data={traffic}>
                     <XAxis dataKey="month" stroke="#4c84ff" />
                     <YAxis />
                     <Tooltip />
@@ -37,14 +20,14 @@ export default function CardTable (props) {
                     <Bar type="monotone" dataKey="sales" fill="#4c84ff" barSize={50} />
                 </Chart>    
                 
-                <ChartTb width={340} height={250} data={sales}>
+                <ChartTb width={340} height={250} data={traffic}>
                     <XAxis dataKey="month" stroke="#4c84ff" />
                     <YAxis />
                     <Tooltip />
                     <CartesianGrid stroke="#ccc" />
                     <Bar type="monotone" dataKey="sales" fill="#4c84ff" barSize={50} />
                 </ChartTb>
-                <ChartMb width={288} height={250} data={sales}>
+                <ChartMb width={288} height={250} data={traffic}>
                     <XAxis dataKey="month" stroke="#4c84ff" />
                     <YAxis />
                     <Tooltip />
@@ -59,3 +42,9 @@ export default function CardTable (props) {
         </Card>
     );
 }
+
+const mapStateToProps = state => ({
+  traffic: state.sales
+});
+
+export default connect(mapStateToProps)(CardTable)
